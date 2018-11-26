@@ -8,9 +8,9 @@ use think\Model;
  */
 class  UserModel extend Model
 {
-	
-	function __construct(argument)
-	{
-		# code...
-	}
+  public function getUser()
+  {
+    $user = UserModel:get(1);
+    echo json_encode(['name'=>$user['username']]);
+  }
 }
