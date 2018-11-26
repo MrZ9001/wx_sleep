@@ -1,0 +1,40 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/video/video",
+    "pages/audio/audio",
+    "pages/image/image"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#314E79",
+    "navigationBarTitleText": "睡莲小睡眠",
+    "navigationBarTextStyle":"#fff"
+  },
+  "tabBar": {
+    "backgroundColor": "#006d90",
+    "color": "#fff",
+    "selectedColor":"#00ACF7",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/icon/home.png",
+        "selectedIconPath": "static/icon/home_selected.png"
+      },
+      {
+        "pagePath": "pages/video/video",
+        "text": "碎语",
+        "iconPath": "static/icon/community.png",
+        "selectedIconPath": "static/icon/community_selected.png"
+      },
+      {
+        "pagePath": "pages/audio/audio",
+        "text": "手记",
+        "iconPath": "static/icon/flying.png",
+        "selectedIconPath": "static/icon/flying_selected.png"
+      }
+    ]
+  }
+}

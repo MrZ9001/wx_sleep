@@ -1,0 +1,32 @@
+<!--index.wxml-->
+  <view class="playmusic">
+    <view class="play_png">
+      <image src="../../static/icon/play.png" class="play-img" style='width:32px;height:32px;'></image>
+    </view>
+  </view>
+  <view class="tip">
+    <text class="goodnight">让一切失落和疲惫消逝在黑夜中，晚安！</text>
+  </view>
+  <scroll-view  scroll-y="true" class="list_box ul">
+    <view class="music_list li"  wx:for="{{musicList}}" wx:key="{{array}}">
+      <view class="music_title">
+        <view class="music_name">{{item.music_name}}</view>
+      </view>
+      <view class="author_icon">
+        <image src="{{item.author_icon}}"></image>
+      </view>
+      <view class="author_from">
+        <view class="author_name">{{item.author_name}}</view>
+      </view>
+      <view class="time_icon">
+        <image src="{{item.time_icon}}"></image>
+      </view>
+      <view class="time_text">
+        <view class="times">{{item.times}}</view>
+      </view>
+      <view class="playing">
+         <image src="{{item.playing_icon_1}}"></image>
+      </view>
+    </view>
+  </scroll-view >
+
